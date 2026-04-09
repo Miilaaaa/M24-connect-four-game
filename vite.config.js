@@ -5,7 +5,9 @@ import svgr from "vite-plugin-svgr";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: process.env.NODE_ENV === "production" ? "M24-connect-four-game" : "/",
+  base: 
+  // eslint-disable-next-line no-undef
+  process.env.NODE_ENV === "production" ? "M24-connect-four-game" : "/",
   server: {
     port: 5173, // Default port, change if needed
     open: true, // Automatically opens the browser on start
